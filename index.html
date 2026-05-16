@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>贪吃蛇 | Snake Game</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <main class="game-shell">
+      <section class="scoreboard" aria-label="游戏状态">
+        <div>
+          <span class="label">分数</span>
+          <strong id="score">0</strong>
+        </div>
+        <div>
+          <span class="label">最佳</span>
+          <strong id="bestScore">0</strong>
+        </div>
+        <div>
+          <span class="label">速度</span>
+          <strong id="speed">1x</strong>
+        </div>
+      </section>
+
+      <section class="board-wrap" aria-label="贪吃蛇游戏区域">
+        <canvas id="game" width="480" height="480" aria-label="贪吃蛇游戏画布"></canvas>
+        <div id="overlay" class="overlay">
+          <h1>贪吃蛇</h1>
+          <p>按方向键或 WASD 开始</p>
+          <button id="startButton" type="button">开始游戏</button>
+        </div>
+      </section>
+
+      <section class="controls" aria-label="游戏控制">
+        <button id="pauseButton" type="button">暂停</button>
+        <button id="restartButton" type="button">重新开始</button>
+      </section>
+    </main>
+
+    <script src="game.js"></script>
+  </body>
+</html>
